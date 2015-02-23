@@ -1,0 +1,33 @@
+{
+  "name": "react-to-basics",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "watchify -v --extension .jsx -o main.js main.jsx"
+  },
+  "author": {
+    "name": "Mark Steve Samson",
+    "email": "hello@Marksteve.com"
+  },
+  "dependencies": {
+    "react": "^0.12.2",
+    "react-router": "^0.12.0",
+    "velocity-animate": "^1.2.2"
+  },
+  "devDependencies": {
+    "reactify": "^1.0.0",
+    "watchify": "^2.4.0"
+  },
+  "browserify": {
+    "transform": [
+      [
+        "reactify",
+        {
+          "es6": true
+        }
+      ]
+    ]
+  }
+}
